@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Burama Bobb, DevOps Engineer</title>
+	<style>
+	  :root {
+		color-scheme: light;
+		--bg: #f7f5f2;
+		--card: #ffffff;
+		--text: #1f2937;
+		--muted: #6b7280;
+		--accent: #b87333;
+		--accent-soft: rgba(184, 115, 51, 0.12);
+		--border: #e5e7eb;
+		--shadow: 0 20px 50px rgba(31, 41, 55, 0.08);
+	  }
+
+	  * {
+		box-sizing: border-box;
+	  }
+
+	  body {
+		margin: 0;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+		color: var(--text);
+		background:
+		  radial-gradient(circle at top, rgba(184, 115, 51, 0.08), transparent 35%),
+		  var(--bg);
+		line-height: 1.6;
+	  }
+
+	  .page {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 32px 20px 48px;
+	  }
+
+	  .hero,
+	  .content-card {
+		background: var(--card);
+		border: 1px solid var(--border);
+		border-radius: 24px;
+		box-shadow: var(--shadow);
+	  }
+
+	  .hero {
+		padding: 40px;
+		display: grid;
+		gap: 20px;
+		margin-bottom: 20px;
+	  }
+
+	  .eyebrow {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		width: fit-content;
+		padding: 8px 14px;
+		border-radius: 999px;
+		background: var(--accent-soft);
+		color: var(--accent);
+		font-size: 0.9rem;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	  }
+
+	  h1,
+	  h2,
+	  p {
+		margin: 0;
+	  }
+
+	  h1 {
+		font-size: clamp(2.4rem, 5vw, 4.2rem);
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+	  }
+
+	  .lead {
+		max-width: 60ch;
+		font-size: 1.1rem;
+		color: var(--muted);
+	  }
+
+	  .actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		margin-top: 8px;
+	  }
+
+	  .button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 18px;
+		border-radius: 14px;
+		text-decoration: none;
+		font-weight: 700;
+		border: 1px solid transparent;
+	  }
+
+	  .button.primary {
+		background: var(--accent);
+		color: white;
+	  }
+
+	  .button.secondary {
+		background: white;
+		color: var(--text);
+		border-color: var(--border);
+	  }
+
+	  .grid {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 20px;
+	  }
+
+	  .content-card {
+		padding: 28px;
+	  }
+
+	  .about {
+		grid-column: span 7;
+	  }
+
+	  .skills {
+		grid-column: span 5;
+	  }
+
+	  .projects,
+	  .contact {
+		grid-column: span 12;
+	  }
+
+	  .section-title {
+		font-size: 1.35rem;
+		margin-bottom: 14px;
+	  }
+
+	  .muted {
+		color: var(--muted);
+	  }
+
+	  ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	  }
+
+	  .list {
+		display: grid;
+		gap: 12px;
+	  }
+
+	  .list li {
+		padding: 14px 16px;
+		border: 1px solid var(--border);
+		border-radius: 16px;
+		background: #fafafa;
+	  }
+
+	  .tag-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	  }
+
+	  .tag {
+		display: inline-flex;
+		align-items: center;
+		padding: 8px 12px;
+		border-radius: 999px;
+		background: #f3f4f6;
+		color: #374151;
+		font-size: 0.95rem;
+		font-weight: 600;
+	  }
+
+	  a {
+		color: var(--accent);
+	  }
+
+	  .contact-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		align-items: center;
+	  }
+
+	  .footer-note {
+		margin-top: 14px;
+		font-size: 0.95rem;
+	  }
+
+	  @media (max-width: 760px) {
+		.page {
+		  padding: 16px 14px 28px;
+		}
+
+		.hero,
+		.content-card {
+		  border-radius: 20px;
+		}
+
+		.hero {
+		  padding: 28px;
+		}
+
+		.content-card {
+		  padding: 22px;
+		}
+
+		.about,
+		.skills {
+		  grid-column: span 12;
+		}
+	  }
+	</style>
+  </head>
+  <body>
+	<main class="page">
+	  <section class="hero" aria-labelledby="intro-title">
+		<p class="eyebrow">DevOps Engineer in Training</p>
+		<h1 id="intro-title">Burama Bobb</h1>
+		<p class="lead">
+		  I’m learning to ship reliable infrastructure, automate deployments, and build
+		  production-ready systems on AWS.
+		</p>
+		<div class="actions">
+		  <a class="button primary" href="mailto:buramabobb1@gmail.com">Contact Me</a>
+		  <a class="button secondary" href="#projects">View Projects</a>
+		</div>
+	  </section>
+
+	  <section class="grid" aria-label="Portfolio details">
+		<article class="content-card about">
+		  <h2 class="section-title">About</h2>
+		  <p class="muted">
+			I focus on cloud infrastructure, automation, and clean operational practices.
+			This page is a simple portfolio landing page for highlighting what I’m learning
+			and building.
+		  </p>
+		</article>
+
+		<article class="content-card skills">
+		  <h2 class="section-title">Skills</h2>
+		  <div class="tag-list" aria-label="Skills list">
+			<span class="tag">AWS</span>
+			<span class="tag">Linux</span>
+			<span class="tag">Terraform</span>
+			<span class="tag">Docker</span>
+			<span class="tag">CI/CD</span>
+		  </div>
+		</article>
+
+		<article class="content-card projects" id="projects">
+		  <h2 class="section-title">Projects</h2>
+		  <ul class="list">
+			<li>
+			  <strong>Edge Portfolio</strong>
+			  <div class="muted">This page — a clean starter portfolio with a responsive layout.</div>
+			</li>
+		  </ul>
+		</article>
+
+		<article class="content-card contact">
+		  <h2 class="section-title">Contact</h2>
+		  <div class="contact-row">
+			<a href="mailto:buramabobb1@gmail.com">buramabobb1@gmail.com</a>
+			<span class="muted">•</span>
+			<span class="muted">Available for DevOps, cloud, and automation opportunities</span>
+		  </div>
+		  <p class="footer-note muted">Replace placeholder text with your real name and contact details.</p>
+		</article>
+	  </section>
+	</main>
+  </body>
+</html>
